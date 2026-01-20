@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-  <title>Auto Desmonte Peças Diesel | Orçamento via WhatsApp</title>
+  <title>Peças Diesel | Orçamento Rápido via WhatsApp</title>
 
-  <!-- SEO BÁSICO -->
-  <meta name="description" content="Peças diesel leves e pesadas, motores e câmbios com envio para todo o Brasil. Orçamento rápido pelo WhatsApp.">
-  <meta name="keywords" content="peças diesel, auto desmonte, motor diesel, peças caminhonete">
+  <!-- SEO -->
+  <meta name="description" content="Peças diesel leves e pesadas com envio para todo o Brasil. Orçamento rápido via WhatsApp.">
   <meta name="robots" content="index, follow">
 
   <!-- PERFORMANCE -->
   <link rel="preconnect" href="https://cdn.tailwindcss.com">
-  <link rel="preconnect" href="https://cdn-icons-png.flaticon.com">
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
 
-  <!-- TAILWIND CDN -->
+  <!-- TAILWIND CDN (leve) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- CONFIG TAILWIND -->
   <script>
     tailwind.config = {
       theme: {
+        screens: {
+          sm: '360px',
+          md: '768px',
+          lg: '1024px',
+        },
         extend: {
           colors: {
             primary: '#111827',
@@ -32,106 +35,133 @@
     }
   </script>
 
-  <!-- CSS PROFISSIONAL -->
+  <!-- CSS CUSTOM -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-gray-100 text-gray-800 antialiased">
+<body class="bg-gray-100 text-gray-800 antialiased overflow-x-hidden">
 
-  <!-- HEADER -->
-  <header class="fixed top-0 left-0 w-full z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-      <img src="assets/src/images/logo.webp" alt="Auto Desmonte Peças Diesel" class="h-12">
+<!-- HEADER -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <img src="assets/src/images/logo.webp"
+         alt="Auto Desmonte Peças Diesel"
+         class="h-10 md:h-12">
 
-      <a href="#contato"
-         class="btn-primary hidden md:inline-flex">
-        Orçamento Online
-      </a>
-    </div>
-  </header>
+    <a href="#contato" class="btn-primary hidden md:flex">
+      Orçamento Online
+    </a>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section class="hero pt-32 pb-20 bg-primary text-white">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<!-- HERO -->
+<section class="hero pt-28 pb-16 bg-primary text-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
 
-      <div class="animate-fade">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">
-          Peças Diesel Leves e Pesadas
-        </h1>
+    <div class="animate-fade text-center md:text-left">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+        Peças Diesel Leves<br class="hidden md:block"> e Pesadas
+      </h1>
 
-        <p class="text-lg mb-6 text-gray-200">
-          Motores, câmbios e peças originais com envio rápido para todo o Brasil.
-        </p>
-
-        <a href="https://wa.me/5511999999999?text=Quero%20um%20orçamento"
-           target="_blank"
-           class="btn-primary">
-          Solicitar Orçamento no WhatsApp
-        </a>
-      </div>
-
-      <img src="assets/src/images/hero.jpg"
-           alt="Motor Diesel"
-           loading="lazy"
-           class="animate-fade">
-    </div>
-  </section>
-
-  <!-- CATEGORIAS -->
-  <section class="py-20">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-12">Principais Categorias</h2>
-
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-
-        <div class="card animate-fade">
-          <img src="assets/src/images/produto-1.jpg" alt="Motores Diesel" loading="lazy">
-          <h3 class="font-semibold text-lg">Motores Completos</h3>
-        </div>
-
-        <div class="card animate-fade">
-          <img src="assets/src/images/produto-2.jpg" alt="Peças Diesel" loading="lazy">
-          <h3 class="font-semibold text-lg">Peças Diesel</h3>
-        </div>
-
-        <div class="card animate-fade">
-          <img src="assets/src/images/produto-3.jpg" alt="Caminhonetes Diesel" loading="lazy">
-          <h3 class="font-semibold text-lg">Caminhonetes</h3>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section id="contato" class="py-16 text-white text-center">
-    <div class="max-w-4xl mx-auto px-6 animate-fade">
-      <h2 class="text-3xl font-bold mb-4">Fale com um Especialista</h2>
-      <p class="mb-6 text-gray-300">Atendimento rápido, estoque real e envio para todo o Brasil.</p>
+      <p class="text-base md:text-lg text-gray-200 mb-6 max-w-xl mx-auto md:mx-0">
+        Motores, câmbios e peças com envio rápido para todo o Brasil.
+      </p>
 
       <a href="https://wa.me/5511999999999?text=Quero%20um%20orçamento"
-         target="_blank"
-         class="btn-primary">
-        Chamar no WhatsApp
+         class="btn-primary w-full sm:w-auto text-center">
+        Solicitar Orçamento no WhatsApp
       </a>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="text-center py-6">
-    <p>© 2026 Auto Desmonte Peças Diesel</p>
-    <p>Mogi Guaçu - SP | Enviamos para todo Brasil</p>
-  </footer>
+    <img src="assets/src/images/hero.jpg"
+         alt="Motor Diesel"
+         loading="lazy"
+         width="600"
+         height="400"
+         class="animate-fade mx-auto md:mx-0">
+  </div>
+</section>
 
-  <!-- WHATSAPP FLUTUANTE -->
-  <a href="https://wa.me/5511999999999?text=Quero%20um%20orçamento"
-     target="_blank"
-     class="whatsapp-float"
-     aria-label="Falar no WhatsApp">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="28">
-  </a>
+<!-- CATEGORIAS -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-10">
+      Principais Categorias
+    </h2>
 
-  <!-- JS -->
-  <script src="js/script.js"></script>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <div class="card animate-fade">
+        <img src="assets/src/images/produto-1.jpg"
+             alt="Motores Diesel"
+             loading="lazy"
+             width="400"
+             height="300">
+        <h3 class="font-semibold text-lg mt-2">
+          Motores Completos
+        </h3>
+      </div>
+
+      <div class="card animate-fade">
+        <img src="assets/src/images/produto-2.jpg"
+             alt="Peças Diesel"
+             loading="lazy"
+             width="400"
+             height="300">
+        <h3 class="font-semibold text-lg mt-2">
+          Peças Diesel
+        </h3>
+      </div>
+
+      <div class="card animate-fade">
+        <img src="assets/src/images/produto-3.jpg"
+             alt="Caminhonetes Diesel"
+             loading="lazy"
+             width="400"
+             height="300">
+        <h3 class="font-semibold text-lg mt-2">
+          Caminhonetes
+        </h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contato" class="py-14 text-white text-center">
+  <div class="max-w-3xl mx-auto px-4 animate-fade">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">
+      Fale com um Especialista
+    </h2>
+
+    <p class="text-gray-300 mb-6">
+      Atendimento rápido e envio para todo o Brasil.
+    </p>
+
+    <a href="https://wa.me/5511999999999?text=Quero%20um%20orçamento"
+       class="btn-primary w-full sm:w-auto">
+      Chamar no WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 text-center py-5 text-sm">
+  <p>© 2026 Auto Desmonte Peças Diesel</p>
+  <p>Mogi Guaçu - SP • Envio para todo Brasil</p>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5511999999999?text=Quero%20um%20orçamento"
+   class="whatsapp-float"
+   aria-label="WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+       alt=""
+       width="28"
+       height="28">
+</a>
+
+<script src="js/script.js"></script>
 </body>
 </html>
